@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<InvokeConfig>
+  <KeyItem ID="通过逻辑层添加用户">
+    <AssemblyPath>TxHumor.BLL</AssemblyPath>
+    <ClassName>TxHumor.BLL.bll_User</ClassName>
+    <MethodName>AddUser</MethodName>
+  </KeyItem>
+</InvokeConfig>

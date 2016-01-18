@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CacheKey>
+  <KeyItem ID="CacheHumor">
+    <Pre>B_KB_M_Humor_</Pre>
+    <AssemblyPath>TxHumor.Cache.Service</AssemblyPath>
+    <ClassName>TxHumor.Cache.Service.bll.srv_HumorInfo</ClassName>
+    <MethodName>GetHumorInfoById</MethodName>
+    <ExpTime>72000</ExpTime>
+  </KeyItem>
+  <KeyItem ID="CacheHumorList">
+    <Pre>B_KB_M_Humor_</Pre>
+    <AssemblyPath>TxHumor.Cache.Service</AssemblyPath>
+    <ClassName>TxHumor.Cache.Service.bll.srv_HumorInfo</ClassName>
+    <MethodName>GetHumorInfoByIds</MethodName>
+    <ExpTime>72000</ExpTime>
+  </KeyItem>
+</CacheKey>

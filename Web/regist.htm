@@ -1,0 +1,369 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>捧腹网</title>
+    <script type="text/javascript" src="http://static.pengfu.com/js/base-all-v2.js?resourceversion=1"></script>
+    <script src="http://static.pengfu.com/js/login.js?v=1.2" type="text/javascript"></script>
+    <style type="text/css">
+        body
+        {
+            margin: 0px;
+            padding: 0px;
+            background: #FFF;
+            color: #676767;
+            font: normal 12px SimSun;
+        }
+        div, form, ul, ol, li, span, p, dl, dt, dd, img
+        {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        h1, h2, h3, h4, h5, h6
+        {
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            font-weight: normal;
+        }
+        ul, ol, li
+        {
+            list-style: none;
+        }
+        em
+        {
+            font-style: normal;
+        }
+        table, td, input, textarea
+        {
+            font-size: 12px;
+        }
+        .container
+        {
+            width: 700px;
+            height: 500px;
+            margin: 0 auto;
+            border: 1px solid #cbdce4;
+        }
+        .main
+        {
+            overflow: hidden;
+            height: 500px;
+        }
+        .landLeft
+        {
+            width: 289px;
+            height: 456px;
+            float: left;
+            padding: 44px 0 0 56px;
+        }
+        .landLeft h1
+        {
+            font-size: 28px;
+            color: #333333;
+            font-weight: bold;
+            height: 36px;
+            line-height: 41px;
+        }
+        .yxInput
+        {
+            width: 289px;
+            height: 39px;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+        .yxInput input
+        {
+            width: 200px;
+            height: 34px;
+            line-height: 35px;
+            border: 1px solid #cccccc;
+            background: url(http://r.itiexue.net/pengfu/images/xtbPic.gif) 10px 15px no-repeat;
+            padding-left: 38px;
+            color: #919191;
+        }
+        .yxYhm
+        {
+            width: 289px;
+            height: 39px;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+        .yxYhm input
+        {
+            width: 200px;
+            height: 34px;
+            line-height: 35px;
+            border: 1px solid #cccccc;
+            background: url(http://r.itiexue.net/pengfu/images/xtbPic.gif) 10px -17px no-repeat;
+            padding-left: 38px;
+            color: #919191;
+        }
+        .yhMm
+        {
+            width: 289px;
+            height: 39px;
+            margin-top: 21px;
+        }
+        .yhMm input
+        {
+            width: 200px;
+            height: 35px;
+            line-height: 35px;
+            border: 1px solid #cccccc;
+            background: url(http://r.itiexue.net/pengfu/images/xtbPic.gif) 10px -49px no-repeat;
+            padding-left: 38px;
+            color: #919191;
+        }
+        .checkbox
+        {
+            margin-top: 17px;
+            height: 20px;
+            line-height: 20px;
+        }
+        .checkbox input
+        {
+            vertical-align: middle;
+        }
+        .checkbox a
+        {
+            color: #51991b;
+            text-decoration: none;
+        }
+        .checkbox a:hover
+        {
+            color: #51991b;
+            text-decoration: underline;
+        }
+        .dlZhmm
+        {
+            height: 41px;
+            margin-top: 21px;
+        }
+        .dlZhmm .dlAn
+        {
+            width: 120px;
+            height: 41px;
+            float: left;
+        }
+        .dlZhmm .dlAn input
+        {
+            width: 116px;
+            height: 37px;
+            background: #69c526;
+            text-align: center;
+            color: #fff;
+            border: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .verification
+        {
+            width: 289px;
+            height: 39px;
+            margin-top: 21px;
+        }
+        .verification .yzInput input
+        {
+            width: 80px;
+            line-height: 35px;
+            height: 35px;
+            border: 1px solid #cccccc;
+            float: left;
+            background: url(http://r.itiexue.net/pengfu/images/xtbPic.gif) 10px -81px no-repeat;
+            padding-left: 38px;
+            color: #919191;
+        }
+        .verification .yzImgs
+        {
+            width: 85px;
+            height: 39px;
+            float: left;
+            margin-left: 10px;
+            display: inline;
+        }
+        .verification .hyzWord
+        {
+            line-height: 39px;
+            float: left;
+            padding-left: 10px;
+        }
+        .verification .hyzWord a
+        {
+            color: #51991b;
+            text-decoration: none;
+        }
+        .verification .hyzWord a:hover
+        {
+            color: #51991b;
+            text-decoration: underline;
+        }
+        .landRight
+        {
+            width: 309px;
+            height: 456px;
+            float: left;
+            padding: 44px 0 0 40px;
+            border-left: 1px solid #cbdce4;
+        }
+        .landRight h4
+        {
+            font-size: 18px;
+            color: #666666;
+            font-weight: bold;
+            height: 36px;
+            line-height: 41px;
+        }
+        .txQq
+        {
+            height: 34px;
+            margin-top: 27px;
+            line-height: 34px;
+            width: 309px;
+            overflow: hidden;
+        }
+        .txQq .dyYc
+        {
+            text-indent: -2000px;
+        }
+        .txQq a
+        {
+            height: 34px;
+            width: 118px;
+            float: left;
+            background: url(http://r.itiexue.net/pengfu/images/xltbPic.gif) no-repeat;
+            display: block;
+            margin-right: 13px;
+            display: inline;
+        }
+        .txQq span
+        {
+            color: #51991b;
+        }
+        .xlWb a
+        {
+            background: url(http://r.itiexue.net/pengfu/images/xltbPic.gif) 0 -44px no-repeat;
+        }
+        .tXw a
+        {
+            background: url(http://r.itiexue.net/pengfu/images/xltbPic.gif) 0 -88px no-repeat;
+        }
+        .yypFzh
+        {
+            font-size: 18px;
+            color: #666666;
+            font-weight: bold;
+            height: 36px;
+            height: 41px;
+            line-height: 41px;
+            margin-top: 29px;
+        }
+        .pfLjdl
+        {
+            width: 120px;
+            height: 41px;
+        }
+        .pfLjdl input
+        {
+            width: 116px;
+            height: 37px;
+            background: #69c526;
+            text-align: center;
+            color: #fff;
+            border: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .sjKhd
+        {
+            background: url(http://r.itiexue.net/pengfu/images/xtbPic.gif) 0 -125px no-repeat;
+            padding-left: 20px;
+            height: 16px;
+            line-height: 18px;
+            margin-top: 40px;
+        }
+        .sjKhd a
+        {
+            color: #676767;
+            text-decoration: none;
+        }
+        .sjKhd a:hover
+        {
+            color: #676767;
+            text-decoration: underline;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //PF_GetRegValImg();
+            $("#btnLogin").click(function () {
+                window.location.href = "/login.htm";
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="landLeft">
+                <h1>
+                    注册</h1>
+                <p class="yxInput">
+                    <input id="fastRegEmail" type="text" value="邮箱" onfocus="clearAalue(this)" onblur="if(this.value==''){this.value='邮箱';this.style.color='#999'}" /></p>
+                <p class="yxYhm">
+                    <input id="fastRegUserName" type="text" value="用户名" onfocus="clearAalue(this)" onblur="if(this.value==''){this.value='用户名';this.style.color='#999'}" /></p>
+                <p class="yhMm">
+                    <input id="fastRegPwd" type="text" value="密码" onfocus="clearAalue(this,false)" onblur="if(this.value==''){this.value='密码';this.style.color='#999'}" /></p>
+                <p class="yhMm">
+                    <input id="fastRegRePwd" type="text" value="确认密码" onfocus="clearAalue(this)" onblur="if(this.value==''){this.value='确认密码';this.style.color='#999'}" /></p>
+                <div class="verification">
+                    <p class="yzInput">
+                        <input id="fastRegVal" type="text" value="验证码" onfocus="clearAalue(this)" onblur="if(this.value==''){this.value='验证码';this.style.color='#999'}" /></p>
+                    <p class="yzImgs">
+                        <img  src="../ValidatecodeImg.aspx" width="85" height="39" /></p>
+                    <p class="hyzWord">
+                        <a href="javascript:void(0);" onclick="PF_GetRegValImg();">换一张</a></p>
+                </div>
+                <p class="checkbox">
+                    <input name="chkAgree " type="checkbox" id="chkAgree" checked="checked" /><label
+                        for="chkAgree" style="cursor: pointer">我已经阅读并同意遵守<a href="/regprovision.htm"
+                            target="_blank" onclick="chkAgree.checked=true;">《注册条款》</a></label></p>
+                <div class="dlZhmm">
+                    <p class="dlAn">
+                        <input name="注册" type="button" value="注&nbsp;册" style="cursor: pointer" onclick="FastRegProess()" /></p>
+                </div>
+            </div>
+            <div class="landRight">
+                <h4>
+                    用以下快捷方式直接登录</h4>
+                <div class="txQq">
+                    <p class="dyYc">
+                        <a href="javascript:void(0);" onclick="showQQ();" title="腾讯QQ">腾讯QQ</a></p>
+                    <p>
+                        登录后显示为您的<span>QQ号.qq</span></p>
+                </div>
+                <div class="txQq xlWb">
+                    <p class="dyYc">
+                        <a href="javascript:void(0);" onclick="showSina();" title="新浪微博">新浪微博</a></p>
+                    <p>
+                        登录后显示为您的<span>微博号.sina</span></p>
+                </div>
+                <div class="txQq tXw">
+                    <p class="dyYc">
+                        <a href="javascript:void(0);" title="铁血网">闪妹妹娱乐网</a></p>
+                    <p>
+                        登录后显示为您的<span>闪妹妹娱乐网ID</span></p>
+                </div>
+                <p class="yypFzh">
+                    已有捧腹账号</p>
+                <p class="pfLjdl">
+                    <input id="btnLogin" name="立即登录" type="button" style="cursor: pointer" value="立即登录" /></p>
+                <p class="sjKhd">
+                    <a href="/phone.html" target="_blank">现在下载捧腹手机客户端，随时随地分享欢乐！</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

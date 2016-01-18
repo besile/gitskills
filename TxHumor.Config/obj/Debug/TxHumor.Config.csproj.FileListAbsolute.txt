@@ -1,0 +1,4 @@
+E:\work\TxHumor\TxHumor.Config\bin\Debug\TxHumor.Config.dll
+E:\work\TxHumor\TxHumor.Config\bin\Debug\TxHumor.Config.pdb
+E:\work\TxHumor\TxHumor.Config\obj\Debug\TxHumor.Config.dll
+E:\work\TxHumor\TxHumor.Config\obj\Debug\TxHumor.Config.pdb

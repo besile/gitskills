@@ -1,0 +1,7 @@
+E:\work\TxHumor\TxHumor.UI.Model\bin\Debug\TxHumor.UI.Model.dll
+E:\work\TxHumor\TxHumor.UI.Model\bin\Debug\TxHumor.UI.Model.pdb
+E:\work\TxHumor\TxHumor.UI.Model\bin\Debug\TxHumor.Common.Attr.dll
+E:\work\TxHumor\TxHumor.UI.Model\bin\Debug\TxHumor.Common.Attr.pdb
+E:\work\TxHumor\TxHumor.UI.Model\obj\Debug\TxHumor.UI.Model.csprojResolveAssemblyReference.cache
+E:\work\TxHumor\TxHumor.UI.Model\obj\Debug\TxHumor.UI.Model.dll
+E:\work\TxHumor\TxHumor.UI.Model\obj\Debug\TxHumor.UI.Model.pdb

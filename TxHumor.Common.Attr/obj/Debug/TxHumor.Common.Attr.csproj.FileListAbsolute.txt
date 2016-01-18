@@ -1,0 +1,8 @@
+E:\work\TxHumor.Common.Attr\bin\Debug\TxHumor.Common.Attr.dll
+E:\work\TxHumor.Common.Attr\bin\Debug\TxHumor.Common.Attr.pdb
+E:\work\TxHumor.Common.Attr\obj\Debug\TxHumor.Common.Attr.dll
+E:\work\TxHumor.Common.Attr\obj\Debug\TxHumor.Common.Attr.pdb
+E:\work\TxHumor\TxHumor.Common.Attr\bin\Debug\TxHumor.Common.Attr.dll
+E:\work\TxHumor\TxHumor.Common.Attr\bin\Debug\TxHumor.Common.Attr.pdb
+E:\work\TxHumor\TxHumor.Common.Attr\obj\Debug\TxHumor.Common.Attr.dll
+E:\work\TxHumor\TxHumor.Common.Attr\obj\Debug\TxHumor.Common.Attr.pdb

@@ -1,0 +1,327 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- BEGIN HEAD -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>管理首页 - 捧腹管理系统</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <link href="http://guozili.28.web1268.net/assets/bootstrap/css/bootstrap.min.css"
+        rel="stylesheet">
+    <link href="http://guozili.28.web1268.net/assets/css/metro.css" rel="stylesheet">
+    <link href="http://guozili.28.web1268.net/assets/bootstrap/css/bootstrap-responsive.min.css"
+        rel="stylesheet">
+    <link href="http://guozili.28.web1268.net/assets/font-awesome/css/font-awesome.css"
+        rel="stylesheet">
+    <link href="http://guozili.28.web1268.net/assets/css/style.css" rel="stylesheet">
+    <link href="http://guozili.28.web1268.net/assets/css/style_responsive.css" rel="stylesheet">
+    <link href="http://guozili.28.web1268.net/assets/css/style_default.css" rel="stylesheet"
+        id="style_color">
+    <link href="http://guozili.28.web1268.net/assets/fancybox/source/jquery.fancybox.css"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/Content/css/uniform.default.css">
+    <link rel="stylesheet" type="text/css" href="/Content/css/chosen.css">
+    <link rel="stylesheet" href="http://guozili.28.web1268.net/assets/data-tables/DT_bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/Content/css/uniform.default.css">
+    <link rel="stylesheet" type="text/css" href="/Content/css/jquery-ui-1.10.1.custom.min.css">
+    <link rel="stylesheet" type="text/css" href="/Content/css/admin.main.css">
+    <link rel="stylesheet" type="text/css" href="/Content/css/jquery.thickbox.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="fixed-top breakpoint-1280">
+    <!-- BEGIN HEADER -->
+    <div class="header navbar navbar-inverse navbar-fixed-top">
+        <!-- BEGIN TOP NAVIGATION BAR -->
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <!-- BEGIN LOGO -->
+                <a class="brand" href="http://guozili.28.web1268.net/Account/Auth/index.html">
+                    <img src="/Content/images/logo.png" alt="logo">
+                </a>
+                <!-- END LOGO -->
+                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                <a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+                    <img src="/Content/images/menu-toggler.png" alt="">
+                </a>
+                <!-- END RESPONSIVE MENU TOGGLER -->
+                <!-- BEGIN TOP NAVIGATION MENU -->
+                <ul class="nav pull-right">
+                    <!-- BEGIN NOTIFICATION DROPDOWN -->
+                    <li class="dropdown" id="header_notification_bar"><a href="http://guozili.28.web1268.net/Account/Auth/Index#"
+                        class="dropdown-toggle" data-toggle="dropdown"><i class="icon-warning-sign"></i>
+                        <span class="badge">6</span> </a>
+                        <ul class="dropdown-menu extended notification">
+                            <li>
+                                <p>
+                                    You have 14 new notifications</p>
+                            </li>
+                            <li><a href="http://guozili.28.web1268.net/Account/Auth/Index#"><span class="label label-success">
+                                <i class="icon-plus"></i></span>New user registered. <span class="time">Just now</span>
+                            </a></li>
+                            <li><a href="http://guozili.28.web1268.net/Account/Auth/Index#"><span class="label label-important">
+                                <i class="icon-bolt"></i></span>Server #12 overloaded. <span class="time">15 mins</span>
+                            </a></li>
+                            <li><a href="http://guozili.28.web1268.net/Account/Auth/Index#"><span class="label label-warning">
+                                <i class="icon-bell"></i></span>Server #2 not respoding. <span class="time">22 mins</span>
+                            </a></li>
+                            <li><a href="http://guozili.28.web1268.net/Account/Auth/Index#"><span class="label label-info">
+                                <i class="icon-bullhorn"></i></span>Application error. <span class="time">40 mins</span>
+                            </a></li>
+                            <li><a href="http://guozili.28.web1268.net/Account/Auth/Index#"><span class="label label-important">
+                                <i class="icon-bolt"></i></span>Database overloaded 68%. <span class="time">2 hrs</span>
+                            </a></li>
+                            <li><a href="http://guozili.28.web1268.net/Account/Auth/Index#"><span class="label label-important">
+                                <i class="icon-bolt"></i></span>2 user IP blocked. <span class="time">5 hrs</span>
+                            </a></li>
+                            <li class="external"><a href="http://guozili.28.web1268.net/Account/Auth/Index#">See
+                                all notifications <i class="m-icon-swapright"></i></a></li>
+                        </ul>
+                    </li>
+                    <!-- END NOTIFICATION DROPDOWN -->
+                    <!-- BEGIN INBOX DROPDOWN -->
+                    <li class="dropdown" id="header_inbox_bar"><a href="http://guozili.28.web1268.net/Account/Auth/Index#"
+                        class="dropdown-toggle" data-toggle="dropdown"><i class="icon-envelope-alt"></i>
+                        <span class="badge">5</span> </a>
+                        <ul class="dropdown-menu extended inbox">
+                            <li>
+                                <p>
+                                    You have 12 new messages</p>
+                            </li>
+                            <li><a href="http://guozili.28.web1268.net/Account/Auth/Index#"><span class="photo">
+                                <img src="/Content/images/avatar2.jpg" alt=""></span> <span class="subject"><span
+                                    class="from">Lisa Wong</span> <span class="time">Just Now</span> </span><span class="message">
+                                        Vivamus sed auctor nibh congue nibh. auctor nibh auctor nibh... </span></a>
+                            </li>
+                            <li><a href="http://guozili.28.web1268.net/Account/Auth/Index#"><span class="photo">
+                                <img src="/Content/images/avatar3.jpg" alt=""></span> <span class="subject"><span
+                                    class="from">Richard Doe</span> <span class="time">16 mins</span> </span><span class="message">
+                                        Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh...
+                                </span></a></li>
+                            <li><a href="http://guozili.28.web1268.net/Account/Auth/Index#"><span class="photo">
+                                <img src="/Content/images/avatar1.jpg" alt=""></span> <span class="subject"><span
+                                    class="from">Bob Nilson</span> <span class="time">2 hrs</span> </span><span class="message">
+                                        Vivamus sed nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                            </a></li>
+                            <li class="external"><a href="http://guozili.28.web1268.net/Account/Auth/Index#">See
+                                all messages <i class="m-icon-swapright"></i></a></li>
+                        </ul>
+                    </li>
+                    <!-- END INBOX DROPDOWN -->
+                    <!-- BEGIN TODO DROPDOWN -->
+                    <li class="dropdown" id="header_task_bar"><a href="http://guozili.28.web1268.net/Account/Auth/Index#"
+                        class="dropdown-toggle" data-toggle="dropdown"><i class="icon-tasks"></i><span class="badge">
+                            5</span> </a>
+                        <ul class="dropdown-menu extended tasks">
+                            <li>
+                                <p>
+                                    You have 12 pending tasks</p>
+                            </li>
+                            <li><a href="http://guozili.28.web1268.net/Account/Auth/Index#"><span class="task"><span
+                                class="desc">New release v1.2</span> <span class="percent">30%</span> </span><span
+                                    class="progress progress-success "><span style="width: 30%;" class="bar"></span>
+                                </span></a></li>
+                            <li><a href="http://guozili.28.web1268.net/Account/Auth/Index#"><span class="task"><span
+                                class="desc">Application deployment</span> <span class="percent">65%</span> </span>
+                                <span class="progress progress-danger progress-striped active"><span style="width: 65%;"
+                                    class="bar"></span></span></a></li>
+                            <li><a href="http://guozili.28.web1268.net/Account/Auth/Index#"><span class="task"><span
+                                class="desc">Mobile app release</span> <span class="percent">98%</span> </span><span
+                                    class="progress progress-success"><span style="width: 98%;" class="bar"></span>
+                                </span></a></li>
+                            <li><a href="http://guozili.28.web1268.net/Account/Auth/Index#"><span class="task"><span
+                                class="desc">Database migration</span> <span class="percent">10%</span> </span><span
+                                    class="progress progress-warning progress-striped"><span style="width: 10%;" class="bar">
+                                    </span></span></a></li>
+                            <li><a href="http://guozili.28.web1268.net/Account/Auth/Index#"><span class="task"><span
+                                class="desc">Web server upgrade</span> <span class="percent">58%</span> </span><span
+                                    class="progress progress-info"><span style="width: 58%;" class="bar"></span>
+                                </span></a></li>
+                            <li><a href="http://guozili.28.web1268.net/Account/Auth/Index#"><span class="task"><span
+                                class="desc">Mobile development</span> <span class="percent">85%</span> </span><span
+                                    class="progress progress-success"><span style="width: 85%;" class="bar"></span>
+                                </span></a></li>
+                            <li class="external"><a href="http://guozili.28.web1268.net/Account/Auth/Index#">See
+                                all tasks <i class="m-icon-swapright"></i></a></li>
+                        </ul>
+                    </li>
+                    <!-- END TODO DROPDOWN -->
+                    <!-- BEGIN USER LOGIN DROPDOWN -->
+                    <li class="dropdown user"><a href="http://guozili.28.web1268.net/Account/Auth/Index#"
+                        class="dropdown-toggle" data-toggle="dropdown">
+                        <img alt="" src="/Content/images/avatar.gif" style="height: 29px;">
+                        <span class="username">admin</span> <i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://guozili.28.web1268.net/Account/Auth/extra_profile.html"><i class="icon-user">
+                            </i>我的信息</a></li>
+                            <li><a href="http://guozili.28.web1268.net/Account/Auth/calendar.html"><i class="icon-calendar">
+                            </i>我的日历</a></li>
+                            <li><a href="http://guozili.28.web1268.net/Account/Auth/Index#"><i class="icon-tasks">
+                            </i>我的任务</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://guozili.28.web1268.net/Account/Auth/ModifyPwd?TB_iframe=true&KeepThis=true&height=380&width=500"
+                                class="thickbox" title="修改密码"><i class="icon-key"></i>修改密码</a></li>
+                            <li><a href="http://guozili.28.web1268.net/Account/Auth/Logout"><i class="icon-signout">
+                            </i>退出系统</a></li>
+                        </ul>
+                    </li>
+                    <!-- END USER LOGIN DROPDOWN -->
+                </ul>
+                <!-- END TOP NAVIGATION MENU -->
+            </div>
+        </div>
+        <!-- END TOP NAVIGATION BAR -->
+    </div>
+    <!-- END HEADER -->
+    <!-- BEGIN CONTAINER -->
+    <div class="page-container row-fluid">
+        <!-- BEGIN SIDEBAR -->
+        <div class="page-sidebar nav-collapse collapse">
+            <!-- BEGIN SIDEBAR MENU -->
+            <ul>
+                <li>
+                    <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+                    <div class="sidebar-toggler hidden-phone">
+                        <h3 style="margin-left: -160px; line-height: 23px; color: #666;">
+                            GMS功能菜单</h3>
+                    </div>
+                    <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+                </li>
+                <li>
+                    <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
+                    <form class="sidebar-search dn">
+                    <div class="input-box">
+                        <a href="javascript:;" class="remove"></a>
+                        <input type="text" placeholder="Search...">
+                        <input type="button" class="submit" value=" ">
+                    </div>
+                    </form>
+                    <!-- END RESPONSIVE QUICK SEARCH FORM -->
+                </li>
+                <li class="active"><a href="./管理首页 - GMS管理系统_files/管理首页 - GMS管理系统.html" title="欢迎登录GMS系统！">
+                    <i class="icon-home"></i><span class="title">管理首页</span> <span class="selected">
+                    </span></a></li>
+                <li class="has-sub"><a href="javascript:;" title="" style="background-color: rgb(49, 49, 49);">
+                    <i class="icon-cog"></i><span class="title">系统管理</span> <span class="arrow"></span>
+                </a>
+                    <ul class="sub" style="display: block;">
+                        <li><a href="http://guozili.28.web1268.net/Account/User/Index" title="添加修改删除用户">用户管理</a></li>
+                        <li><a href="http://guozili.28.web1268.net/Account/Role/Index" title="添加修改删除角色">角色管理</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub"><a href="javascript:;" title="" style="background-color: rgb(49, 49, 49);">
+                    <i class="icon-leaf"></i><span class="title">帖子管理</span> <span class="arrow"></span>
+                </a>
+                    <ul class="sub" style="display: block;">
+                        <li><a href="http://guozili.28.web1268.net/Cms/Article/Index" title="添加修改删除文章">帖子不同类型展示管理</a></li>
+                        <li><a href="http://guozili.28.web1268.net/Cms/Channel/Index" title="添加修改删除文章频道">帖子审核管理</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub"><a href="javascript:;" title="" style="background-color: rgb(49, 49, 49);">
+                    <i class="icon-sitemap"></i><span class="title">回复管理</span> <span class="arrow">
+                    </span></a>
+                    <ul class="sub" style="display: block;">
+                        <li><a href="http://guozili.28.web1268.net/OA/Staff/Index" title="添加修改删除员工信息">回复展示管理</a></li>
+                        <li><a href="http://guozili.28.web1268.net/OA/Branch/Index" title="添加修改删除部门信息">恢复审核管理</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub"><a href="javascript:;" title="" style="background-color: rgb(49, 49, 49);">
+                    <i class="icon-phone-sign"></i><span class="title">CRM管理</span> <span class="arrow">
+                    </span></a>
+                    <ul class="sub" style="display: block;">
+                        <li><a href="http://guozili.28.web1268.net/Crm/VisitRecord/Index" title="添加修改删除来访来电">
+                            来访来电</a></li>
+                        <li><a href="http://guozili.28.web1268.net/Crm/Customer/Index" title="添加修改删除客户">客户管理</a></li>
+                        <li><a href="http://guozili.28.web1268.net/Crm/Project/Index" title="添加修改删除项目">项目管理</a></li>
+                        <li><a href="http://guozili.28.web1268.net/Crm/Analysis/Index" title="查看业绩统计">业绩统计</a></li>
+                        <li><a href="http://guozili.28.web1268.net/Crm/Analysis/VisitStatistics" title="查看来电统计">
+                            来电统计</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- END SIDEBAR MENU -->
+        </div>
+        <!-- END SIDEBAR -->
+        <!-- BEGIN PAGE -->
+        <div class="page-content">
+            <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+            <div id="portlet-config" class="modal hide">
+                <div class="modal-header">
+                    <button data-dismiss="modal" class="close" type="button">
+                    </button>
+                    <h3>
+                        portlet Settings</h3>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Here will be a configuration form</p>
+                </div>
+            </div>
+            <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+            <!--中间内容开始-->
+            <asp:ContentPlaceHolder ID="main" runat="server" />
+            <!-- BEGIN PAGE CONTAINER-->
+            <!-- END PAGE CONTAINER-->
+        </div>
+        <!-- END PAGE -->
+    </div>
+    <!-- END CONTAINER -->
+    <!-- BEGIN FOOTER -->
+    <div class="footer">
+        2013 © GMS by guozili@163.com
+        <div class="span pull-right">
+            <span class="go-top"><i class="icon-angle-up"></i></span>
+        </div>
+    </div>
+    <!-- END FOOTER -->
+    <!-- BEGIN JAVASCRIPTS -->
+    
+    <asp:ContentPlaceHolder ID="foot" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        var staticFileRoot = "http://guozili.28.web1268.net";
+    </script>
+    <!-- Load javascripts at bottom, this will reduce page load time -->
+    <script src="/Content/js/jquery-1.8.3.min.js"></script>
+    <script src="/Content/js/breakpoints.js"></script>
+    <script src="/Content/js/bootstrap.min.js"></script>
+    <script src="/Content/js/jquery.blockui.js"></script>
+    <script src="/Content/js/jquery.cookie.js"></script>
+    <!-- ie8 fixes -->
+    <!--[if lt IE 9]>
+	<script src="http://guozili.28.web1268.net/assets/js/excanvas.js"></script>
+	<script src="http://guozili.28.web1268.net/assets/js/respond.js"></script>
+	<![endif]-->
+    <script type="text/javascript" src="/Content/js/jquery.uniform.min.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="/Content/js/DT_bootstrap.js"></script>
+    <script type="text/javascript" src="/Content/js/app.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery.thickbox.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery-ui-1.10.1.custom.min.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery.numeric.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery.ui.datapicker-zh-CN.js"></script>
+    <script type="text/javascript" src="/Content/js/admin.main.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            // initiate layout and plugins
+            App.init();
+        });
+    </script>
+    <script type="text/javascript">
+        $("#navigation").hide();
+        $(".sub").show();
+        $(".has-sub>a").each(function () {
+            $(this).css("background-color", "#313131");
+
+        });
+    </script>
+    <!-- END BODY -->
+</body>
+</html>

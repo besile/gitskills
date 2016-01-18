@@ -1,0 +1,4 @@
+E:\work\TxHumor\TxHumor.Code\bin\Debug\TxHumor.Code.dll
+E:\work\TxHumor\TxHumor.Code\bin\Debug\TxHumor.Code.pdb
+E:\work\TxHumor\TxHumor.Code\obj\Debug\TxHumor.Code.dll
+E:\work\TxHumor\TxHumor.Code\obj\Debug\TxHumor.Code.pdb

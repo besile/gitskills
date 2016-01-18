@@ -1,0 +1,10 @@
+E:\work\TxHumor\TxHumor.Common\bin\Debug\TxHumor.Common.dll
+E:\work\TxHumor\TxHumor.Common\bin\Debug\TxHumor.Common.pdb
+E:\work\TxHumor\TxHumor.Common\obj\Debug\TxHumor.Common.dll
+E:\work\TxHumor\TxHumor.Common\obj\Debug\TxHumor.Common.pdb
+E:\work\TxHumor\TxHumor.Common\bin\Debug\TxHumor.Common.Attr.dll
+E:\work\TxHumor\TxHumor.Common\bin\Debug\TxHumor.Common.Attr.pdb
+E:\work\TxHumor\TxHumor.Common\obj\Debug\TxHumor.Common.csprojResolveAssemblyReference.cache
+E:\work\TxHumor\TxHumor.Common\bin\Debug\TxHumor.Code.dll
+E:\work\TxHumor\TxHumor.Common\bin\Debug\TxHumor.Code.pdb
+E:\work\TxHumor\TxHumor.Common\bin\Debug\log4net.dll

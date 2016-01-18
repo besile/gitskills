@@ -1,0 +1,9 @@
+E:\work\TxHumor\TxHumor.Redis\bin\Debug\TxHumor.Redis.dll
+E:\work\TxHumor\TxHumor.Redis\bin\Debug\TxHumor.Redis.pdb
+E:\work\TxHumor\TxHumor.Redis\bin\Debug\ServiceStack.Common.dll
+E:\work\TxHumor\TxHumor.Redis\bin\Debug\ServiceStack.Interfaces.dll
+E:\work\TxHumor\TxHumor.Redis\bin\Debug\ServiceStack.Redis.dll
+E:\work\TxHumor\TxHumor.Redis\bin\Debug\ServiceStack.Text.dll
+E:\work\TxHumor\TxHumor.Redis\obj\Debug\TxHumor.Redis.dll
+E:\work\TxHumor\TxHumor.Redis\obj\Debug\TxHumor.Redis.pdb
+E:\work\TxHumor\TxHumor.Redis\obj\Debug\TxHumor.Redis.csprojResolveAssemblyReference.cache

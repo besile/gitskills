@@ -1,0 +1,173 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta property="qc:admins" content="1157231753460567656375" />
+    <title></title>
+    <link href="http://www.jiongshibaike.com/Data/Static/Css/base.css" type="text/css"
+            rel="stylesheet" />
+       
+        <link rel="stylesheet" type="text/css" href="http://s.itiexue.net/css/global/global.css?resourceversion=1" />
+        <link rel="stylesheet" type="text/css" href="http://s.itiexue.net/css/pengfu/v2/public.css?resourceversion=10" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!--头开始-->
+    <div id="header">
+        <div id="headbar">
+            <div class="layout fn-clear">
+                <div id="logo">
+                    <a href="www.jiongshibaike.html">
+                        <img class="png" src="http://www.jiongshibaike.com/Data/Static/image/logo.png" alt="囧事百科"></a>
+                </div>
+                <!-- // logo end -->
+                <div id="head-mala" class="png">
+                </div>
+                <!-- // head-mala End -->
+            </div>
+        </div>
+        <!-- // headbar end -->
+        <div id="navbar-wrap">
+            <div id="navbar">
+                <div id="navigation">
+                    <div class="layout fn-clear">
+                        <ul id="mainnav">
+                            <li class="nav-item" id="nav-home"><a id="1" class="nav-link " href="http://www.jiongshibaike.com/index">
+                                热门</a></li>
+                            <li class="nav-item nav-dot"></li>
+                            <li class="nav-item drop-down" id="nav-latest"><a id="2" class="nav-link drop-title "
+                                href="http://www.jiongshibaike.com/day">最新</a>
+                                <div class="drop-box">
+                                    <div class="drop-box-arrow">
+                                    </div>
+                                    <ul class="ui-nav-list">
+                                        <li><a href="http://www.jiongshibaike.com/day">24小时内</a></li><li><a href="http://www.jiongshibaike.com/week">
+                                            7天内</a></li><li><a href="http://www.jiongshibaike.com/month">30天内</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item nav-dot"></li>
+                            <li class="nav-item" id="nav-spicy"><a id="3" class="nav-link " href="http://www.jiongshibaike.com/mala">
+                                囧图</a></li>
+                            <li class="nav-item nav-dot"></li>
+                            <li class="nav-item" id="nav-fresh"><a id="4" class="nav-link " href="http://www.jiongshibaike.com/sanxian">
+                                囧事</a></li>
+                            <li class="nav-item nav-dot"></li>
+                            <li class="nav-item drop-down" id="nav-pc"><a id="5" class="nav-link " href="http://www.jiongshibaike.com/video">
+                                视频</a>
+                                <div class="drop-box">
+                                    <div class="drop-box-arrow">
+                                    </div>
+                                    <ul class="ui-nav-list">
+                                        <li><a href="http://www.jiongshibaike.com/vgs">搞笑视频</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item nav-dot"></li>
+                            <li class="nav-item" id="nav-verify"><a id="6" class="nav-link " href="http://www.jiongshibaike.com/shentie">
+                                审贴</a></li>
+                            <li class="nav-item nav-dot"></li>
+                            <li class="nav-item" id="nav-write"><a id="7" class="nav-link " href="http://www.jiongshibaike.com/fabu">
+                                加点料</a></li>
+                            <li class="nav-item nav-dot"></li>
+                            <li class="nav-item" id="nav-jf"><a id="8" class="nav-link" href="http://www.jiongshibaike.com/award">
+                                积分兑换</a></li>
+                        </ul>
+                        <!-- // mainnav end -->
+                        <div id="u-state">
+                            <div id="ui-checkin">
+                                <a class="ui-checkin" id="checkin-popup" href="javascript:;"><span class="pen"></span>
+                                </a>
+                            </div>
+                            <div id="navsign">
+                                <ul id="nav-login">
+                                    <li class="nav-item drop-down"><a class="nav-link drop-title" target="_self" href="javascript:showLogin();">
+                                        登录</a> </li>
+                                    <li class="nav-item drop-down"><a class="nav-link drop-title" target="_self" onclick="_gaq.push(['_trackEvent', 'list', 'clicked', '注册'])"
+                                        href="javascript:showReg();"><span>注册</span></a> </li>
+                                </ul>
+                                <!-- // nav-login end -->
+                            </div>
+                            <script type="text/javascript">
+                                links = "1|2|3|4|5|6|7|8"; pagename = "热门|最新|麻辣|三鲜|视频|审贴|加点|积分";
+                                title = document.title;
+                                links_in = links.split("|");
+                                pagename_in = pagename.split("|");
+                                title_in = title.substr(title, 2);
+                                for (i = 0; i < pagename_in.length; i++) {
+                                    if (pagename_in[i] == title_in) {
+                                        document.getElementById(links_in[i]).className = "nav-link nav-link-current";
+                                        break;
+                                    }
+                                }
+                            </script>
+                        </div>
+                        <!-- // signnav end -->
+                    </div>
+                </div>
+                <div id="navshadow">
+                </div>
+            </div>
+        </div>
+        <!-- // navbar-wrap end -->
+    </div>
+    <!--头结束-->
+    <asp:ContentPlaceHolder ID="main" runat="server" />
+    <!-- footer/S -->
+    <div id="footer" class="png">
+        <div class="layout fn-clear">
+            <div class="ui-module-links">
+                <strong>友情链接：</strong>
+            </div>
+            <div class="footer-nav">
+                <a href="http://www.jiongshibaike.com/aubto">关于我们</a><em>/</em><a href="http://www.jiongshibaike.com/career">人才招聘</a><em>/</em><a
+                    href="http://www.jiongshibaike.com/newuser">新手初读</a><em>/</em><a href="http://www.jiongshibaike.com/integral">积分规则</a><em>/</em>
+            </div>
+            <div class="copyright">
+                版权所有 © 2013 囧事百科 jiongshibaike.com 苏ICP备14040369号-2
+            </div>
+        </div>
+    </div>
+    <!-- footer/E -->
+    <%--<script type="text/javascript" src="http://s.itiexue.net/js/global/base-all-v2.js?resourceversion=1"></script>--%>
+    <%--<script type="text/javascript" src="http://s.itiexue.net/js/pengfu/v2/publicv2.js?resourceversion=15"></script>--%>
+    <script type="text/javascript" src="http://static.pengfu.com/js/base-all-v2.js?resourceversion=1"></script>
+    <script type="text/javascript" src="http://static.pengfu.com/js/pengfu.index.js?resourceversion=2"></script>
+    <asp:ContentPlaceHolder ID="foot" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <script type="text/javascript">
+        //显示登录框
+        function showLogin() {
+            ShowLayerWithWidth("", "/login.htm", "700px", "530px");
+        }
+
+        //显示注册框
+
+        function showReg() {
+            ShowLayerWithWidth("", "/regist.htm", "700px", "530px");
+        }
+
+        /*弹出框 标题 url 宽度长度*/
+        ShowLayerWithWidth = function (title, url, width, height) {
+            if (!title || title.trim() == "") {
+                title = "&nbsp;";
+            }
+            alert(111111)
+            tx.PopLayer.ShowLayer({ Title: title, LayerWidth: width, LayerHeight: height, bgAlpha: '0.2', sIframe: url }); //传iframe,如果不要遮罩层的话把bgAlpah设为0即可
+            
+        };
+        //TX.PopLayer.CloseLayer();//关闭弹出层
+   
+
+   var tx= {
+    ShowLayer: function (a) { var b, c, d; return a.hasOwnProperty("sIframe") && a.hasOwnProperty("sHtml") ? (alert("sIframe or sHtml only"), void 0) : a.hasOwnProperty("sIframe") || a.hasOwnProperty("sHtml") ? (a.hasOwnProperty("firstFn") && this.fnRun(a.firstFn), $("body").append(TX.PopLayer.TempLate() + "<div id='zheZhaoLayer'></div>"), b = $("#zheZhaoLayer"), c = $("#pubLayer_Msg"), a.Title ? c.find(".ui_layerTit").html(a.Title) : $(".pop_bar").remove(), d = 0 == $(document).scrollTop() ? $(document).height() : $("body").height(), b.css({ height: d, opacity: a.bgAlpha }), this.LayerMiddle(a.LayerWidth, a.LayerHeight, a.Position), $(window).resize(function () { TX.PopLayer.LayerMiddle(a.LayerWidth, a.LayerHeight, a.Position) }), 0 == a.bgAlpha ? c.fadeIn(200) : b.fadeIn(100, function () { function d() { var a = c.find(".pop_bar"); a.css({ background: f ? "#FFF" : "#eaeaea" }), f = f ? 0 : 1, g++, g > 3 && (clearInterval(e), e = null, g = 0) } var e, f, g; $.browser.msie && $.browser.version < 7 ? c.fadeIn() : (c.css({ display: "block", opacity: 0 }), c.animate({ top: ($(window).height() - parseInt(a.LayerHeight)) / 2 - 50 > 0 ? ($(window).height() - parseInt(a.LayerHeight)) / 2 - 50 : 10, opacity: 1 }, "fast"), c.find(".pop_bar").mousedown(function (b) { return TX.PopLayer.popMove(b, c, a.LayerWidth, a.LayerHeight, !0), !1 })), e = null, b.click(function () { clearInterval(e), e = setInterval(d, 50) }), f = 1, g = 0 }), c.find(".closeLayer").click(function () { a.hasOwnProperty("backFn") ? TX.PopLayer.CloseLayer("pubLayer_Msg", a.backFn) : TX.PopLayer.CloseLayer("pubLayer_Msg", !1) }), a.hasOwnProperty("sIframe") ? c.append("<div class='onloadBeforMsg'>正在读取中...</div><iframe src='" + a.sIframe + "' frameborder='0' scrolling='no' width='100%' height='100%' onload=\"$(this).prev('.onloadBeforMsg').remove().end().fadeIn('slow')\"></iframe>") : a.hasOwnProperty("sHtml") && c.append(a.sHtml), void 0) : (alert("please whirte src or html"), void 0) }, LayerMiddle: function (a, b, c) { function e() { d.css({ width: a, height: b, position: "absolute", margin: 0, left: Math.floor(($(window).width() - parseInt(a)) / 2), top: Math.floor(($(window).height() - parseInt(b)) / 2 - 20 + $(window).scrollTop()) }) } var d = $("#pubLayer_Msg"); $.browser.msie && $.browser.version < 7 ? (e(), $(window).scroll(function () { e() })) : d.css({ width: a, height: b, position: c ? c : "fixed", margin: 0, left: Math.floor(($(window).width() - parseInt(a)) / 2), top: Math.floor(($(window).height() - parseInt(b)) / 2 - 70) > 0 ? Math.floor(($(window).height() - parseInt(b)) / 2 - 70) : 10 }) }, popMove: function (a, b, c, d, e) { function f(a) { a || (a = window.event); var f = a.clientX, g = a.clientY, j = k + (f - h), m = l + (g - i) - $(document).scrollTop(), n = $(window).width() - c - 2, o = $(window).height() - d - 2; return e ? (j > n ? b.css("left", n) : m > o ? b.css("top", o > 0 ? o : 10) : 0 > j ? b.css("left", 0) : 0 > m ? b.css("top", 0) : (b.css("left", j), b.css("top", m)), !1) : void 0 } function g() { e = !1, $(document).unbind("mousemove mouseup") } var c = parseInt(c), d = parseInt(d), a = a || window.event, e = e, h = a.clientX, i = a.clientY, j = b.offset(), k = j.left, l = j.top; $(document).bind("mousemove", f), $(document).bind("mouseup", g) }, fnRun: function (fn) { try { "function" != typeof fn ? eval(fn) : fn() } catch (e) { } }, CloseLayer: function (a, b) { function c() { 0 != $("#zheZhaoLayer").size() ? ($("#zheZhaoLayer").fadeOut(300, function () { b && TX.PopLayer.fnRun(b) }), $("#zheZhaoLayer").remove()) : b && TX.PopLayer.fnRun(b), d.remove() } var d = void 0 == a ? $("#pubLayer_Msg") : $("#" + a); $.browser.msie && $.browser.version < 7 ? d.fadeOut(300, c) : d.animate({ top: d.offset().top - $(document).scrollTop() - 25, opacity: 0 }, 200, c) } }, AddFavorite: function (a, b) { try { window.external.addFavorite(a, b) } catch (c) { try { window.sidebar.addPanel(b, a, "") } catch (c) { alert("加入收藏失败，请使用Ctrl+D进行添加！") } } }, HomePage: function () { if (document.all) document.body.style.behavior = "url(#default#homepage)", document.body.setHomePage(window.location.href); else if (window.sidebar) { if (window.netscape) try { netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect") } catch (a) { alert("该操作被浏览器拒绝，如果想启用该功能，请在地址栏内输入 about:config,然后将项 signed.applets.codebase_principal_support 值该为true") } var b = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch); b.setCharPref("browser.startup.homepage", window.location.href) } else alert("抱歉，您的浏览器不支持自动设置首页, 请使用浏览器菜单手动设置!") }, BaiduAd_Show: function (a, b, c, d, e) { var f = $("#" + a); f.length > 0 && f.html('<iframe src="' + b + "?id=" + c + '" width="' + d + 'px" height="' + e + 'px" scrolling="no" frameborder="0" style="margin:0;background-color:transparent;" allowTransparency="true"></iframe>') }, BackTop: function (a) { function e(a) { var b = $("#" + c.Id), d = $(window).width(); b.length > 0 && ($.browser.msie && $.browser.version < 7 ? b.css({ position: "absolute", top: $(window).height() + $(document).scrollTop() - b.height() - c.Bottom, left: d / 2 + a / 2 + 10 }) : b.css({ position: "fixed", bottom: c.Bottom, left: d / 2 + a / 2 + 10 }), c.Show || (0 == $(document).scrollTop() ? b.fadeOut() : b.fadeIn()), 0 == $(document).scrollTop() ? b.children(".hide").fadeOut() : b.children(".hide").fadeIn()) } var b = { Id: "backTop", TempLate: '<a href="javascript:void(0)" class="top">向上</a>', ConWidth: 960, Show: !1, Bottom: 100 }, c = $.extend(b, a), d = b.Show ? "block" : "none"; setTimeout(function () { $("#" + c.Id).remove(), $("body").append("<div id=" + c.Id + ' style="display:' + d + '">' + c.TempLate + "</div>"), e(c.ConWidth), $("#" + c.Id + " " + ".top").click(function () { $("html,body").animate({ scrollTop: 0 }, 150) }), $(window).bind("scroll resize load", function () { e(c.ConWidth) }) }, 1500) }, ImgLazyLoad: function (a) { function e() { b.Id.each(function () { f(this, b) || $(this).is(":visible") && $(this).trigger("appear") }) } function f(a, b) { var c = $(window).height() + $(window).scrollTop(); return c <= $(a).offset().top - b.threshold } var c, d, b = { Id: $("img"), threshold: 600, effectspeed: 0, effect: "show" };
+}
+
+    </script>
+</body>
+</html>

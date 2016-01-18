@@ -1,0 +1,6 @@
+E:\work\TxHumor\TxHumor.Memcache\bin\Debug\TxHumor.Memcache.dll
+E:\work\TxHumor\TxHumor.Memcache\bin\Debug\TxHumor.Memcache.pdb
+E:\work\TxHumor\TxHumor.Memcache\bin\Debug\Enyim.Caching.dll
+E:\work\TxHumor\TxHumor.Memcache\bin\Debug\log4net.dll
+E:\work\TxHumor\TxHumor.Memcache\obj\Debug\TxHumor.Memcache.dll
+E:\work\TxHumor\TxHumor.Memcache\obj\Debug\TxHumor.Memcache.pdb
